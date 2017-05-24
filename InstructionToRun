@@ -1,0 +1,23 @@
+Here are the instructions to run the program.
+
+Please use the following librarys first:
+
+Jini-core.jar
+Jini-ext.jar
+Outtrigger.jar
+Reggie.jar
+Sun-util.jar
+Reggie-dl.jar
+Mahalo.jar
+
+To run the program in eclipse, in "FP_Main" find the "RunChatProgram.java"
+
+Right click the file and select "Run As" then Run Configuration"
+
+Add a  java application and then in arguments, insert the following into VM Arugments
+
+"-Djava.security.policy=policy.all"
+
+Make sure the policy.all file is added.
+
+Then click apply and then run.
