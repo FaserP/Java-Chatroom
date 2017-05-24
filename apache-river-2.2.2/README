@@ -1,0 +1,30 @@
+This is a modified distribution of the Apache River project release 2.2.2.  
+
+It has been modified by Dr Gary Allen, University of Huddersfield.
+
+The original release and complete information on Apache River can be found on the Apache Software Foundation website at: http://river.apache.org/
+
+This distribution has been modified to contain the following additional files and scripts:
+	apache-river-2.2.2/examples/hello/policy.all
+	  -  a simple java policy file
+	apache-river-2.2.2/examples/hello/start-all-services.sh
+	  -  a script to start the services necessary to run a JavaSpace
+	apache-river-2.2.2/examples/hello/scripts/jrmp-outrigger-group.sh
+	  -  a script to start the JavaSpace
+	apache-river-2.2.2/examples/hello/scripts/jrmp-mahalo-group.sh
+	  -  a script to start the transaction manager
+
+Also, the following scripts:
+	apache-river-2.2.2/examples/hello/scripts/jrmp-reggie.sh
+	apache-river-2.2.2/examples/hello/scripts/jrmp-outrigger-group.sh
+	apache-river-2.2.2/examples/hello/scripts/jrmp-mahalo-group.sh
+
+have been further edited to add the following JVM argument to the 'java' command:
+	-Djava.rmi.server.useCodebaseOnly=false
+
+This is a bit of a hack to fix the problem introduced by changes to the Java RMI framework in Java 1.7.21 and above.  See http://docs.oracle.com/javase/7/docs/technotes/guides/rmi/enhancements-7.html for more details.
+
+
+PLEASE LET ME KNOW IF YOU HAVE ANY PROBLEMS WITH THIS DISTRIBUTION.
+
+
